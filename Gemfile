@@ -39,3 +39,8 @@ end
 
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Devise
+gem 'devise', git: "https://github.com/heartcombo/devise.git",
+      branch: "ca-omniauth-2"
+gem 'omniauth-twitter'
