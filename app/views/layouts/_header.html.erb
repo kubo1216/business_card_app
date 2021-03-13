@@ -1,13 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <NAV>
-      <%= LINK_TO "カードホルダー", ROOT_PATH, ID: "LOGO" %>
-        <UL CLASS="NAV NAVBAR-NAV NAVBAR-RIGHT">
-          <% IF USER_SIGNED_IN? %>
-            <LI><%= LINK_TO CURRENT_USER.NAME, ROOT_PATH %></LI>
-            <LI><%= LINK_TO 'プロフィール変更', EDIT_USER_REGISTRATION_PATH %></LI>
-            <LI><%= LINK_TO 'ログアウト', DESTROY_USER_SESSION_PATH, METHOD: :DELETE %></LI>
-          <% ELSE %>
+    <nav>
+      <%= link_to "カードホルダー", root_path, id: "logo" %>
+        <ul class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <LI><%= link_to current_user.NAME, root_path %></LI>
+            <LI><%= link_to 'プロフィール変更', edit_user_registration_path %></LI>
+            <LI><%= link_to 'ログアウト', destroy_user_session_paht, method: :delete %></LI>
+          <% else %>
             <li><%= link_to "ホーム",   root_path %></li>
             <li><%= link_to 'サインアップ', new_user_registration_path %></li>
             <li><%= link_to 'ログイン', new_user_session_path %></li>
