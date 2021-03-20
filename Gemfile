@@ -44,3 +44,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', git: "https://github.com/heartcombo/devise.git",
       branch: "ca-omniauth-2"
 gem 'omniauth-twitter'
+gem 'dotenv-rails'
