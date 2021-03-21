@@ -4,9 +4,9 @@
       <%= link_to "カードホルダー", root_path, id: "logo" %>
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
-            <LI><%= link_to current_user.NAME, root_path %></LI>
+            <LI><%= link_to current_user.name, root_path %></LI>
             <LI><%= link_to 'プロフィール変更', edit_user_registration_path %></LI>
-            <LI><%= link_to 'ログアウト', destroy_user_session_paht, method: :delete %></LI>
+            <LI><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></LI>
           <% else %>
             <li><%= link_to "ホーム",   root_path %></li>
             <li><%= link_to 'サインアップ', new_user_registration_path %></li>
