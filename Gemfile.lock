@@ -95,14 +95,11 @@ GEM
     coderay (1.1.3)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
-<<<<<<< HEAD
     diff-lcs (1.4.4)
     dotenv (2.7.6)
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
-=======
->>>>>>> parent of 9cbf9df... よくわからんけど動いた
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.15.0)
