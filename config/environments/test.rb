@@ -35,6 +35,8 @@ Rails.application.configure do
   config.active_storage.service = :test
 
   config.action_mailer.perform_caching = false
+  host = 'https://2417dbfa5a87441e8f70c17b9d3d683b.vfs.cloud9.us-east-2.amazonaws.com/'
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 
   # Tell Action Mailer not to deliver emails to the real world.
   # The :test delivery method accumulates sent emails in the

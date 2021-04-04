@@ -11,8 +11,9 @@ gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.4.5', require: false
 
 group :development, :test do
-  gem 'sqlite3', '1.4.1'
-  gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3',     '1.4.1'
+  gem 'byebug',      '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '3.6.0'
 end
 
 group :development do
@@ -20,6 +21,7 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.1.0'
   gem 'spring-watcher-listen', '2.0.1'
+  gem 'spring-commands-rspec'
 end
 
 group :test do
