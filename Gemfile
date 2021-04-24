@@ -24,6 +24,10 @@ group :development do
   gem 'spring-commands-rspec'
 end
 
+group :production do
+  gem 'pg', '1.1.4'
+end
+
 group :test do
   gem 'capybara',                 '3.28.0'
   gem 'selenium-webdriver',       '3.142.4'
@@ -35,9 +39,9 @@ group :test do
   gem 'guard-minitest',           '2.4.6'
 end
 
-group :production do
-  gem 'pg', '1.1.4'
-end
+# group :production do
+#   gem 'pg', '1.1.4'
+# end
 
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
